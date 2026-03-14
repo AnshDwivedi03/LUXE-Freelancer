@@ -1,0 +1,134 @@
+.product-details-page {
+  padding: 40px 0 100px;
+  min-height: calc(100vh - 80px);
+}
+
+.back-btn {
+  margin-bottom: 30px;
+  font-size: 0.9rem;
+  padding: 8px 16px;
+  border-color: rgba(255, 255, 255, 0.2);
+  color: var(--text-secondary);
+}
+
+.back-btn:hover {
+  border-color: var(--primary);
+  background: transparent;
+  color: var(--primary);
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.details-image-container {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.details-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  display: block;
+}
+
+.details-info {
+  padding: 20px 0;
+}
+
+.details-brand {
+  font-family: 'Outfit', sans-serif;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.details-title {
+  font-size: 2.5rem;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.details-price {
+  font-size: 1.8rem;
+  color: var(--text-primary);
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.details-divider {
+  height: 1px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 30px 0;
+}
+
+.details-description {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.purchase-section {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.purchase-btn {
+  flex: 2;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+}
+
+.wishlist-btn {
+  flex: 1;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+}
+
+.product-guarantee {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+}
+
+.product-guarantee p {
+  color: var(--text-secondary);
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+}
+
+.product-guarantee p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+  .details-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .details-title {
+    font-size: 2rem;
+  }
+
+  .purchase-section {
+    flex-direction: column;
+  }
+}
